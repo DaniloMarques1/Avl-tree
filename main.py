@@ -44,11 +44,6 @@ def main():
     else:
         #arvore vazia
         root = Node()
-    print(root.get_left().balance)
-    
-    root.list_items()
-    print(root.is_balanced(root))
-    exit()
     choice = menu()
     while choice != 8:
         if  choice == 1:
@@ -61,7 +56,7 @@ def main():
             root.search_by_year(ano)
         elif choice == 4:
             nome = input("Nome da musica que deseja remover: ")
-            root.remove_by_name(nome)
+            root = root.remove(nome)
         elif choice == 5:
             print("Lista de todas as musicas: ")
             root.list_items()
