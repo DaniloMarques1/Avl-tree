@@ -14,7 +14,7 @@ class Musica:
     def set_autor(self, autor):
         self._autor = autor
 
-    def get_autor(self, autor):
+    def get_autor(self):
         return self._autor
 
     def set_album(self, album):
